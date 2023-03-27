@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.flex-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+    background: rgb(13,22,30);
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 25px 25px -10px rgba(0,0,0,.6);
+}
+
+.flex-container .flex-item h1 {
+    color: white;
+    text-align: center;
+}
+
+.flex-container .flex-item .enterName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-container .flex-item .enterName label {
+    color: white;
+}
+
+    .flex-container .flex-item .enterName label input[type="text"] {
+        margin: 35px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid black;
+        height: 50px;
+        color: white;
+        font-size: 24px;
+    }
+
+        .flex-container .flex-item .enterName label input[type="text"]:focus {
+            outline: none;
+        }
+
+    .flex-container .flex-item .enterName label button {
+        margin: 15px;
+        border: none;
+        height: 40px;
+        width: 200px;
+        background: none;
+        color: darkturquoise;
+        font-size: 24px;
+    }
+
+        .flex-container .flex-item .enterName label button:active, .flex-container .flex-item .enterName label button:hover {
+            color: blueviolet;
+        }
+
+.flex-container .flex-item .enterName .submited {
+    background: rgb(13,22,30);
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0 25px 25px -10px rgba(0,0,0,.6);
+}

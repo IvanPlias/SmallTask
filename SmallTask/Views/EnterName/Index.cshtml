@@ -1,0 +1,26 @@
+﻿@model User
+    <div class="flex-container">
+        <div class="flex-item">
+            <h1>Small Task</h1>
+            @using(Html.BeginForm("Index","EnterName",FormMethod.Post))
+            {
+            <div class="enterName">
+                <label>
+                    @Html.TextBox("Name",null,new {placeholder="Enter name"})
+                </label>
+                <label>
+                    <button type="submit">Submit</button>
+                </label>
+                @{
+                    if (Model.Name != null)
+                    {
+                        <label class="submited">
+                            @*<input type="text" value=Model.Name readonly>*@
+                            @Html.TextBox("Hello","Hello "+Model.Name,new{@readonly="readonly"})
+                        </label>
+                    }
+                }
+            </div>
+            }
+        </div>
+    </div>
